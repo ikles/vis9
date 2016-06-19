@@ -171,19 +171,31 @@ ul {
   src: url(../fonts/OpenSans-Regular.ttf); }
 
 @font-face {
+  font-family: OpenSansI;
+  src: url(../fonts/OpenSans-Italic.ttf); }
+
+@font-face {
   font-family: OpenSansSB;
   src: url(../fonts/OpenSans-Semibold.ttf); }
 
 @font-face {
+  font-family: OpenSansB;
+  src: url(../fonts/OpenSans-Bold.ttf); }
+
+@font-face {
   font-family: UniSansHeavyCAPS;
   src: url(../fonts/Uni_Sans_Heavy.otf); }
+
+@font-face {
+  font-family: UniSansThinCAPS;
+  src: url(../fonts/Uni_Sans_Thin.otf); }
 
 .wrapper {
   width: 100%;
   margin: auto;
   overflow: hidden;
   background-size: 100%;
-  background-color: #fff; }
+  background: #fff url("../img/bg2.jpg") no-repeat bottom center; }
 
 .gray_line {
   width: 100%;
@@ -529,7 +541,7 @@ b, strong {
 .main_content {
   padding-bottom: 30px;
   overflow: hidden;
-  padding-top: 30px; }
+  padding-top: 20px; }
 
 .content {
   float: right;
@@ -545,14 +557,15 @@ b, strong {
       margin-bottom: 0; }
 
 .banner {
-  margin: 20px 0; }
+  margin: 0 0 20px 0; }
 
 h1 {
   color: #2f2f2f;
-  font-family: "Trebuchet MS";
+  font-family: UniSansThinCAPS;
   font-size: 30px;
   margin-bottom: 20px;
-  line-height: 1; }
+  line-height: 1;
+  text-transform: uppercase; }
 
 .content h2 {
   color: #2f2f2f;
@@ -591,10 +604,10 @@ h1 {
   z-index: 1000; }
   .partners .like_h3 {
     text-align: left;
-    color: #000;
-    font-family: "Trebuchet MS";
+    color: #2f2f2f;
+    font-family: UniSansThinCAPS;
     font-size: 30px;
-    margin-bottom: 50px; }
+    margin-bottom: 20px; }
   .partners img {
     max-width: 100%; }
 
@@ -603,61 +616,41 @@ h1 {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 30px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
-  .price_table td {
-    padding: 10px 15px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    vertical-align: middle;
-    border-bottom: 1px solid #dddfe0; }
+  overflow: hidden; }
   .price_table tr:first-child {
-    -webkit-border-radius: 5px 5px 0 0;
-            border-radius: 5px 5px 0 0;
     position: relative; }
     .price_table tr:first-child td {
-      background-color: #F8F8F8;
-      font-family: "Trebuchet MS";
+      background-color: #1883b7;
+      font-family: UniSansHeavyCAPS;
       font-size: 17px;
       padding: 10px 15px;
-      color: #000;
+      color: #fff;
       border-right: none;
       font-style: normal;
       font-weight: normal; }
-    .price_table tr:first-child:after {
-      display: block;
-      position: absolute;
-      float: left;
-      content: "";
-      height: 12px;
-      width: 100%;
-      background: url("../img/shadow.jpg") no-repeat top center;
-      margin: auto;
-      bottom: -12px;
-      right: 0; }
+  .price_table tr:last-child td {
+    border-bottom: none; }
   .price_table td {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: middle;
+    border-bottom: 1px solid #dddfe0;
     padding: 10px 15px;
     font-size: 15px;
     line-height: 1;
-    font-family: "Trebuchet MS";
-    color: #000;
-    background-color: #FFF; }
+    font-family: OpenSansB;
+    color: #1883b7;
+    background-color: #f3f3f3; }
     .price_table td:first-child {
-      font-family: "Trebuchet MS";
-      color: #000; }
+      font-family: OpenSansB;
+      color: #1883b7; }
     .price_table td:nth-child(2n) {
-      font-family: "Trebuchet MS";
+      font-family: OpenSansI;
       color: #636363;
-      font-style: italic;
       font-weight: normal; }
     .price_table td:nth-child(3n) {
-      color: #be1518;
-      font-family: "Trebuchet MS";
-      font-size: 14px;
-      font-weight: bold; }
+      font-family: OpenSansB;
+      color: #1883b7; }
   .price_table tbody tr {
     color: #2f2f2f;
     font-size: 15px; }
@@ -680,160 +673,121 @@ h1 {
   color: #000;
   font-family: Roboto;
   margin-top: 45px;
-  margin-bottom: 50px;
-  overflow: hidden; }
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding-top: 2px; }
   .content .last_news .like_h3 {
-    color: #000;
-    font-family: Roboto;
+    color: #2f2f2f;
+    font-family: UniSansThinCAPS;
     font-size: 30px;
-    margin-bottom: 30px; }
-  .content .last_news ul {
-    text-align: center;
-    display: block;
-    padding-right: 0; }
-    .content .last_news ul li {
-      padding-left: 0;
-      background: none;
-      overflow: hidden;
-      margin-bottom: 30px;
-      font-family: Roboto;
-      font-size: 14px;
-      display: inline-block;
-      width: 270px;
-      margin-right: 25px;
-      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
-      background-color: #FFF; }
-      .content .last_news ul li:nth-child(3n) {
-        margin-right: 0; }
+    margin-bottom: 20px; }
+  .content .last_news ul li {
+    padding-left: 0;
+    background: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: OpenSansI;
+    color: #676767; }
+    .content .last_news ul li:last-child {
+      margin-bottom: 0; }
   .content .last_news a {
-    color: black;
-    font-family: RobotoM;
+    color: #1f5785;
+    font-family: OpenSansSB;
     font-size: 16px;
     text-decoration: underline;
-    margin-bottom: 15px;
-    display: block; }
+    margin-bottom: 10px;
+    display: block;
+    font-style: normal; }
     .content .last_news a:hover {
       text-decoration: none; }
   .content .last_news p {
     line-height: 1.3; }
   .content .last_news .all_lnews_link {
-    width: 125px;
-    height: 40px;
-    background-color: #be1518;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    color: #FFF;
-    padding: 12px 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     display: block;
-    line-height: 1; }
+    text-align: right;
+    color: #1f5785;
+    font-family: OpenSans;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: -35px; }
+    .content .last_news .all_lnews_link:hover {
+      text-decoration: none; }
 
-.content .text_news {
-  padding: 25px 20px 20px 20px;
-  font-family: "Trebuchet MSB";
-  font-size: 16px;
-  color: #000; }
-  .content .text_news a {
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 0; }
-
-.img_news {
-  overflow: hidden; }
-
-.left_form {
-  width: 285px;
+.text_news {
+  padding: 15px 25px;
+  float: left;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 465px;
+  background: #f3f3f3 none repeat scroll 0 0; }
+
+.img_news {
+  overflow: hidden;
+  float: left;
+  margin-right: 0px;
+  width: 375px;
+  font-size: 0;
+  height: 136px;
+  position: relative; }
+
+.left_form {
+  width: 270px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
   position: relative;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  margin-bottom: 30px; }
-  .left_form form {
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    background-color: #FFF;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    width: 270px;
-    margin-left: 5px;
-    padding: 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+  margin-bottom: 20px;
+  background: url("../img/form_bg.jpg") no-repeat 0 0;
+  position: relative; }
   .left_form .like_h3 {
-    font-family: "Trebuchet MS";
-    color: #000;
-    font-size: 21px;
+    font-family: UniSansHeavyCAPS;
+    color: #fff;
+    font-size: 17px;
     text-align: left;
-    margin-bottom: 15px;
-    padding-left: 5px; }
+    margin-bottom: 20px; }
   .left_form input {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 35px;
+    height: 36px;
     width: 100%;
-    background-color: #fff;
+    background-color: #f4f4f4;
     border: none;
     padding: 0 18px;
     color: #6a6966;
     font-family: OpenSans;
     font-size: 14px;
-    margin-bottom: 5px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16);
-            box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16); }
+    margin-bottom: 5px; }
   .left_form textarea {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 100%;
-    height: 105px;
-    background-color: #fff;
+    height: 106px;
+    background-color: #f4f4f4;
     border: none;
     padding: 10px 18px;
     color: #6a6966;
     font-family: OpenSans;
     font-size: 14px;
-    margin-bottom: 5px;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16);
-            box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.16); }
+    margin-bottom: 5px; }
   .left_form button {
     width: 100%;
-    height: 40px;
+    height: 50px;
+    background-color: #ffd200;
     border: none;
     text-align: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    color: #fff;
-    font-family: "Trebuchet MS";
+    color: #000;
+    font-family: OpenSansB;
     font-size: 16px;
-    line-height: 18px;
-    background-color: #be1518;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    font-weight: 700; }
+    line-height: 18px; }
 
 .left_widget_vk {
   width: 270px;
-  margin-left: 5px;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  background-color: #FFF;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  padding: 20px 25px;
+  margin-bottom: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -859,10 +813,10 @@ h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 40px;
-  background-color: #ff6600;
+  color: #1f5785;
   padding: 15px 24px;
-  font-family: MuseoSansCyrl700;
-  font-size: 12px;
+  font-family: OpenSans;
+  font-size: 14px;
   text-transform: uppercase;
   color: #FFF;
   text-decoration: none;
@@ -901,7 +855,7 @@ h1 {
   float: right; }
 
 .footer {
-  background-color: #767676;
+  background-color: rgba(24, 131, 183, 0.85);
   color: #fff;
   overflow: hidden;
   padding: 25px 0 15px 0;
@@ -943,7 +897,7 @@ h1 {
   margin-left: 15px; }
 
 .content {
-  font-family: "Trebuchet MS";
+  font-family: OpenSans;
   color: #2f2f2f;
   font-size: 15px; }
 
