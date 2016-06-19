@@ -184,12 +184,14 @@ ul {
 .gray_line {
   width: 100%;
   overflow: hidden;
-  background-color: #363636;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #F03226;
-  padding: 6px 0;
-  height: 33px;
+  padding: 10px 0;
+  height: 40px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  width: 1400px;
+  margin: auto; }
 
 .w_1200 {
   max-width: 1200px;
@@ -203,43 +205,40 @@ b, strong {
 
 .top {
   position: relative;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.54);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.54);
-  background-color: #fff; }
-
-.top {
-  height: 133px; }
+  background: url("../img/top_bg.jpg") no-repeat top center;
+  height: 120px; }
 
 .top .w_1200 {
   position: relative; }
 
 .logo {
-  margin-top: 15px;
+  margin-top: 8px;
   display: block; }
 
 .col-mnu {
-  margin-top: 45px;
+  margin-top: 27px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 .top_mnu {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  float: right !important; }
   .top_mnu ul {
     margin: 0; }
   .top_mnu li {
     float: left;
     list-style: none;
     line-height: 1;
-    margin-right: 50px; }
+    margin-right: 52px; }
     .top_mnu li:first-child {
       margin-left: 0; }
     .top_mnu li:last-child {
       margin-right: 0; }
   .top_mnu a {
-    color: #000;
+    color: #fff;
     display: block;
-    font-family: "Trebuchet MS";
+    font-family: OpenSansSB;
     font-size: 15px;
     line-height: 1;
     -webkit-box-sizing: border-box;
@@ -252,7 +251,7 @@ b, strong {
 
 .top_phone {
   color: #FFF;
-  font-family: "Trebuchet MS";
+  font-family: MuseoSansCyrl700;
   font-size: 21px;
   text-transform: uppercase;
   background: url("../img/top_icon_phone.png") no-repeat left center;
@@ -263,10 +262,11 @@ b, strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left;
-  margin-top: 2px; }
+  margin-top: 2px;
+  margin-left: -50px; }
   .top_mail a {
     color: #FFF;
-    font-family: "Trebuchet MS";
+    font-family: MuseoSansCyrl700;
     font-size: 14px;
     text-decoration: underline;
     float: left;
@@ -278,7 +278,7 @@ b, strong {
   float: right;
   background: url("../img/top_icon_adress.png") no-repeat left center;
   padding-left: 22px;
-  font-family: "Trebuchet MS";
+  font-family: MuseoSansCyrl500;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.3;
