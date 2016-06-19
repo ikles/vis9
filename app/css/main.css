@@ -835,20 +835,20 @@ h1 {
 
 .bot-mnu-social {
   overflow: hidden;
-  margin-bottom: 30px; }
+  margin-bottom: 23px; }
 
 .bot_mnu {
-  margin-top: 5px; }
+  margin-top: px; }
   .bot_mnu li {
     float: left;
-    margin-right: 44px; }
+    margin-right: 50px; }
     .bot_mnu li:first-child {
       margin-left: 0; }
     .bot_mnu li:last-child {
       margin-right: 0; }
   .bot_mnu a {
     color: white;
-    font-family: "Trebuchet MS";
+    font-family: OpenSansSB;
     font-size: 15px; }
 
 .social {
@@ -858,7 +858,7 @@ h1 {
   background-color: rgba(24, 131, 183, 0.85);
   color: #fff;
   overflow: hidden;
-  padding: 25px 0 15px 0;
+  padding: 30px 0 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
