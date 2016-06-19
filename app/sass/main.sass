@@ -420,13 +420,13 @@ h1
 	text-transform: uppercase
 .content
 	h2
-		color: #2f2f2f
-		font-family: "Trebuchet MS"
+		color: rgb(47, 47, 47)
+		font-family: UniSansThinCAPS
 		font-size: 27px
 		margin-bottom: 20px
 	h3
-		color: #2f2f2f
-		font-family: "Trebuchet MS"
+		color: rgb(47, 47, 47)
+		font-family: UniSansThinCAPS
 		font-size: 24px
 		margin-bottom: 20px
 
@@ -756,7 +756,7 @@ h1
 	font-size: 15px 
 .bread 
 	width: 100%
-	padding: 15px 0 10px 0
+	padding: 20px 0 0 0
 	box-sizing: border-box
 	overflow: hidden
 	background-color: #FFF
@@ -765,7 +765,7 @@ h1
 	li 
 		float: left
 		font-size: 14px
-		font-family: "Trebuchet MS"
+		font-family: OpenSans
 		margin-bottom: 10px
 		margin: 0
 		padding: 0
@@ -774,8 +774,8 @@ h1
 		&:before 
 			content: "" 	
 		a
-			font-size: 14px
-			color: #2f2f2f
+			font-size: 12px
+			color: rgb(47, 47, 47)
 			text-decoration: underline
 			&:hover 
 				text-decoration: none
@@ -783,20 +783,27 @@ h1
 			&:after 
 				line-height: 1.4
 				font-size: 12px
-				font-family: "Trebuchet MS"
+				font-family: OpenSans
 				content: "/"
-				color: #2f2f2f
+				color: rgb(47, 47, 47)
 				float: right
 				margin-right: 10px
 				margin-left: 10px
 				display: inline
 		span
-			color: #be1518
+			color: rgb(24, 131, 183)
+			font-size: 12px
+
+.mb30
+	margin-bottom: 30px
 
 .content 
 	li 
 		margin-bottom: 13px
 		min-height: 20px
+		font-size: 13px
+		font-family: OpenSans
+		color: #000  
 	ul 
 		li 
 			padding-left: 20px
@@ -809,19 +816,17 @@ h1
 			&:before 
 				content: counter(num) ' '
 				counter-increment: num
-				color: #fff
-				font-family: "Trebuchet MS"
-				font-size: 16px							
+				color: rgb(24, 131, 183)
+				font-family: UniSansHeavyCAPS
+				font-size: 14px							
 				text-align: center
 				display: block
 				float: left
-				line-height: 1.3
+				line-height: 1.6
 				margin-right: 10px
 				width: 21px
 				height: 21px
-				background-color: #f03226
-				border-radius: 5px
-
+				
 .white_content
 	border-radius:  4px
 	background-color: #fff
@@ -841,24 +846,22 @@ h1
 	overflow: hidden
 
 blockquote
-	background-color: #fff
-	color: #2f2f2f
-	font-family: "Trebuchet MS"
+	background-color: #f3f3f3
+	color: #000
+	font-family: OpenSans
 	font-size: 15px
 	line-height: 21px
-	padding: 40px 70px 20px 25px
+	padding: 35px 20px 20px 20px
 	box-sizing: border-box
 	width: 100%
 	position: relative
-	border-radius:  5px
 	overflow: hidden
 	margin-bottom: 30px
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25)
 	&:before
 		content: "“";
 		font-size: 48px
-		font-family: "Trebuchet MS"
-		color: #be1518
+		font-family: OpenSans
+		color: rgb(24, 131, 183)
 		position: absolute 
 		left: 25px
 		top: 25px
@@ -867,14 +870,15 @@ blockquote
 	&:after
 		content: "”" 
 		font-size: 48px
-		font-family: "Trebuchet MS"
-		color: #be1518
+		font-family: OpenSans
+		color: rgb(24, 131, 183)
 		position: absolute 
 		bottom: 60px
 		right: 20px
 	
 	b 
-		color: #be1518
+		color: rgb(24, 131, 183)
+		font-family: OpenSansSB 
 		font-weight: normal !important
 		font-size: 15px
 	
