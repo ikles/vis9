@@ -2,13 +2,29 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
+	.content .last_news ul li
+		background-color: #F3F3F3 
+
+	.img_news 
+		padding-top: 15px
+		padding-left: 15px
+		width: 40%
+		img
+			width: 100%
+			
+	.text_news
+		width: 60%
+
 	.bot_mnu
 		a
 			font-size: 13px
 
 	.left_form
+		background: none
+		background-color: #1883b7 
 		.like_h3
 			padding-left: 0
+			text-align: center
 		form
 			width: 100%
 			margin-left: 0
@@ -40,12 +56,15 @@
 	.bot_banner
 		padding-right: 15px
 		padding-left: 15px
-	.content .last_news ul li
-		width: 30%
-		margin-right: 4%
 
 	.main_content
-		padding-top: 0
+		//padding-top: 0
+		
+	.partners
+		margin-top: 20px
+		display: none
+		.like_h3
+			text-align: center
 
 	.logo 
 		position: static
@@ -126,7 +145,7 @@
 	
 	.col-mnu 
 		float: right !important
-		margin-top: 25px
+		margin-top: 15px
 	
 	.col-contacts 
 		float: left !important
@@ -210,6 +229,9 @@
 				&:hover 
 					text-decoration: none
 					background-color: #ccc
+
+	.bot_mnu li
+		margin-right: 25px
 								
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
@@ -236,19 +258,6 @@
 			
 	.top_phone
 		font-size: 17px
-		
-	.content
-		.last_news
-			ul
-				li
-					margin-right: 2%
-					width: 47%
-					&:nth-child(3n)
-						margin-right: 2%
-					&:nth-child(2n)
-						margin-right: 0
-			img
-				max-width: 100% 
 				
 	.bot_mnu
 		a
@@ -266,6 +275,18 @@
 		margin-top: 10px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
+	.last_news	
+		display: none
+
+	.left_mnu
+		margin-bottom: 0px
+		li
+			border-bottom: 1px solid #ccc 
+			padding-bottom: 10px
+
+	.col-logo-mnu
+		background-color: rgb(24, 131, 183)
+
 	.social
 		margin: auto
 		display: block
@@ -310,8 +331,6 @@
 	.footer_adress, .footer_phone 
 		margin-bottom: 10px
 		margin-top: 0
-	.last_news 
-		display: none
 	.footer_mail
 		margin-top: 0px
 	.footer_adress 
@@ -382,7 +401,9 @@
 
 	.toggle-mnu 
 		margin-top: 22px
-	
+		
+	.price_table tr:first-child td
+		font-size: 14px
 
 @media only screen and (max-width : 640px) 
 	.slider 

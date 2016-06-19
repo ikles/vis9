@@ -35,7 +35,7 @@
 .toggle-mnu span:before {
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
@@ -206,7 +206,7 @@ ul {
   height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1400px;
+  max-width: 1400px;
   margin: auto; }
 
 .w_1200 {
@@ -566,6 +566,9 @@ h1 {
   margin-bottom: 20px;
   line-height: 1;
   text-transform: uppercase; }
+
+.content img {
+  max-width: 100%; }
 
 .content h2 {
   color: #2f2f2f;
@@ -1079,13 +1082,27 @@ blockquote {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .content .last_news ul li {
+    background-color: #F3F3F3; }
+  .img_news {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 40%; }
+    .img_news img {
+      width: 100%; }
+  .text_news {
+    width: 60%; }
   .bot_mnu a {
     font-size: 13px; }
-  .left_form .like_h3 {
-    padding-left: 0; }
-  .left_form form {
-    width: 100%;
-    margin-left: 0; }
+  .left_form {
+    background: none;
+    background-color: #1883b7; }
+    .left_form .like_h3 {
+      padding-left: 0;
+      text-align: center; }
+    .left_form form {
+      width: 100%;
+      margin-left: 0; }
   .left_mnu {
     overflow: visible; }
     .left_mnu ul {
@@ -1109,11 +1126,11 @@ blockquote {
   .bot_banner {
     padding-right: 15px;
     padding-left: 15px; }
-  .content .last_news ul li {
-    width: 30%;
-    margin-right: 4%; }
-  .main_content {
-    padding-top: 0; }
+  .partners {
+    margin-top: 20px;
+    display: none; }
+    .partners .like_h3 {
+      text-align: center; }
   .logo {
     position: static;
     font-size: 0; }
@@ -1184,7 +1201,7 @@ blockquote {
     text-align: left; }
   .col-mnu {
     float: right !important;
-    margin-top: 25px; }
+    margin-top: 15px; }
   .col-contacts {
     float: left !important; }
   .content, .left_mnu, .left_form {
@@ -1253,7 +1270,9 @@ blockquote {
         padding-right: 0; }
         .left_mnu._top li a:hover {
           text-decoration: none;
-          background-color: #ccc; } }
+          background-color: #ccc; }
+  .bot_mnu li {
+    margin-right: 25px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1274,15 +1293,6 @@ blockquote {
       margin-bottom: 10px !important; }
   .top_phone {
     font-size: 17px; }
-  .content .last_news ul li {
-    margin-right: 2%;
-    width: 47%; }
-    .content .last_news ul li:nth-child(3n) {
-      margin-right: 2%; }
-    .content .last_news ul li:nth-child(2n) {
-      margin-right: 0; }
-  .content .last_news img {
-    max-width: 100%; }
   .bot_mnu a {
     font-size: 15px; }
   .bot_mnu ul {
@@ -1298,6 +1308,15 @@ blockquote {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .last_news {
+    display: none; }
+  .left_mnu {
+    margin-bottom: 0px; }
+    .left_mnu li {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px; }
+  .col-logo-mnu {
+    background-color: #1883b7; }
   .social {
     margin: auto;
     display: block;
@@ -1332,8 +1351,6 @@ blockquote {
   .footer_adress, .footer_phone {
     margin-bottom: 10px;
     margin-top: 0; }
-  .last_news {
-    display: none; }
   .footer_mail {
     margin-top: 0px; }
   .footer_adress {
@@ -1390,7 +1407,9 @@ blockquote {
   .col-logo-mnu {
     padding-bottom: 12px; }
   .toggle-mnu {
-    margin-top: 22px; } }
+    margin-top: 22px; }
+  .price_table tr:first-child td {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 640px) {
   .slider img {
