@@ -174,12 +174,16 @@ ul {
   font-family: OpenSansSB;
   src: url(../fonts/OpenSans-Semibold.ttf); }
 
+@font-face {
+  font-family: UniSansHeavyCAPS;
+  src: url(../fonts/Uni_Sans_Heavy.otf); }
+
 .wrapper {
   width: 100%;
   margin: auto;
   overflow: hidden;
   background-size: 100%;
-  background-color: #f2f3f5; }
+  background-color: #fff; }
 
 .gray_line {
   width: 100%;
@@ -469,57 +473,45 @@ b, strong {
   width: 285px;
   padding-bottom: 5px; }
   .left_mnu .like_h2 {
-    font-family: "Trebuchet MS";
-    color: #000;
-    font-size: 21px;
+    font-family: UniSansHeavyCAPS;
+    color: #1883b7;
+    font-size: 17px;
     text-align: left;
-    margin-bottom: 15px;
-    padding-left: 5px; }
+    margin-bottom: 30px; }
   .left_mnu ul {
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    background-color: #FFF;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
     width: 270px;
-    margin-left: 5px;
-    padding: 13px 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
   .left_mnu li {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-bottom: 15px; }
+    margin-bottom: 17px; }
     .left_mnu li:before {
       display: block;
       float: left;
       content: "";
-      width: 20px;
-      height: 1px;
-      background: url("../img/defis.jpg") no-repeat left top;
-      margin-top: 7px;
+      width: 10px;
+      height: 12px;
+      background: url("../img/defis.png") no-repeat left top;
+      margin-top: 3px;
       margin-right: 12px; }
   .left_mnu a {
     color: #000;
-    font-family: "Trebuchet MS";
-    font-size: 14px;
+    font-family: OpenSans;
+    font-size: 13px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     line-height: 1.2;
-    padding-left: 30px;
+    padding-left: 20px;
     display: block;
     text-decoration: underline;
     text-decoration: none; }
-  .left_mnu li:hover:before {
-    background-position: left -1px; }
   .left_mnu li:hover a {
     text-decoration: none;
-    color: #be1518; }
-  .left_mnu .active:before {
-    background-position: left -1px; }
+    color: #1883b7; }
   .left_mnu .active a {
     text-decoration: none;
-    color: #be1518; }
+    color: #1883b7; }
 
 .about {
   -webkit-border-radius: 4px;
@@ -553,15 +545,7 @@ b, strong {
       margin-bottom: 0; }
 
 .banner {
-  margin-bottom: 45px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  background-color: #FFF;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  margin: 20px 0; }
 
 h1 {
   color: #2f2f2f;
@@ -1130,6 +1114,12 @@ blockquote {
 
 .clear {
   clear: both; }
+
+.right {
+  float: right !important; }
+
+.left {
+  float: left !important; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
